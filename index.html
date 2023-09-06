@@ -81,50 +81,67 @@
             <div class="tab-content">
               <div class="tab-pane fade show active" id="after-school-tab-pane" role="tabpanel" aria-labelledby="after-school-tab" tabindex="1">
                 <div class="container">
+
                   <ul class="nav nav-underline nav-justified" role="tablist">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Overview</a>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="after-school-overview-tab" data-bs-toggle="tab" data-bs-target="#after-school-overview-tab-pane">Overview</button>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Elementary</a>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="after-school-elementary-tab" data-bs-toggle="tab" data-bs-target="#after-school-elementary-tab-pane">Elementary</button>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Teenage</a>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="after-school-teenage-tab" data-bs-toggle="tab" data-bs-target="#after-school-teenage-tab-pane">Teenage</button>
                     </li>
                   </ul>
 
-                  <div class="tab-content">
-                    <div class="container">
-
-                      <div class="row">
-                        <div class="col-md-4">
-                          <img width="252" height="189" src="images/after-school-1.jpg" class="rounded mx-auto d-block">
-                        </div>
-                        <div class="col-md-7 mx-2 my-1">
-                          <p class="lead">Witness your child fly through grade school with consistent day over day growth in a safe and productive environment.</p>
-                          Learning the principles of the right tools for the right job whether with the keyboard, pen, or spoken word, our students are reinforced with proper form and technique as we guide them through their homework and martial arts training in an after school setting.</p>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="col-md-8 mx-2 my-1">
-                          <p class="lead">For students entering K-5th grade, our elementary after school program with a pickup offering is the perfect afternoon transition for you and your child. </p>
-                          Running from 3:00PM (or right after school with pickup) to 5:30PM, our program includes Taekwondo class, homework help, and a snack break that will have them entering their evening dinner and bed-time routine in the best way possible. 
-                        </div>
-                        <div class="col-md-3">
-                          <img width="252" height="252" src="images/after-school-2.jpg" class="rounded mx-auto d-block">
+                  <div class="tab-content px-3 py-3">
+                    <div class="tab-pane fade show active" id="after-school-overview-tab-pane" role="tabpanel" aria-labelledby="after-school-overview-tab" tabindex="2">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <img width="252" height="189" src="images/after-school-1.jpg" class="rounded mx-auto d-block">
+                          </div>
+                          <div class="col-md-7 mx-2 my-1">
+                            <p class="lead">Witness your child glide through grade school with consistent day over day growth in a safe and productive environment.</p>
+                            Learning the principles of the right tools for the right job whether with the keyboard, pen, or spoken word, our students are reinforced with proper form and technique as we guide them through their homework and martial arts training in an after school setting.
+                            Click through either our Elementary (K-5) or Teenage (6-12) tabs for more information about our times and activities offered.
+                          </div>
                         </div>
                       </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="after-school-elementary-tab-pane" role="tabpanel" aria-labelledby="after-school-elementary-tab" tabindex="2">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-8 mx-2 my-1">
+                            <p class="lead">For students entering K-5th grade, our elementary after school program with a pickup offering is the perfect afternoon transition for you and your child. </p>
+                            Running from 3:00PM (or right after school with pickup) to 5:30PM, our program includes Taekwondo class, homework help, and a snack break that will have them entering their evening dinner and bed-time routine in the best way possible. 
+                          </div>
+                          <div class="col-md-3">
+                            <img width="252" height="252" src="images/after-school-2.jpg" class="rounded mx-auto d-block">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                       
-                      <div class="row">
-                        <div class="col-md-3">
-                          <img width="217" height="258" src="images/having-fun.jpg" class="rounded mx-auto d-block">
-                        </div>
-                        <div class="col-md-8 mx-2 my-1">
-                          <p class="lead">For students entering 6-12th grade, our teenage after school program focuses on developing our students to handle increasing academic load on top of increasing responsibility. </p>Running from 5:45PM to 7:30PM, our teenage program runs in similar fashion with the elementary; including Taekwondo class, homework help, and a snack break.
+                    <div class="tab-pane fade" id="after-school-teenage-tab-pane" role="tabpanel" aria-labelledby="after-school-teenage-tab" tabindex="2">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <img width="217" height="258" src="images/having-fun.jpg" class="rounded mx-auto d-block">
+                          </div>
+                          <div class="col-md-8 mx-2 my-1">
+                            <p class="lead">For students entering 6-12th grade, our teenage after school program focuses on developing our students to handle increasing academic load on top of increasing responsibility. </p>
+                            Running from 5:45PM to 7:30PM, our teenage program includes Taekwondo class, homework help, and a snack break.
+                          </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
 
+                  <div class="row">
+                    <div class="col text-center">
+                      <a type="button" class="btn btn-primary" href="https://forms.gle/nc5TmoLfMEjDyByW9">Contact Us</a>
                     </div>
                   </div>
                 </div>
@@ -156,7 +173,7 @@
         <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contacts-tab" tabindex="0">
           <div class="container px-4 py-5">
             <div class="row">
-              <div class="col">
+              <div class="col text-center">
                 <a type="button" class="btn btn-primary" href="https://forms.gle/nc5TmoLfMEjDyByW9">Contact Form</a>
               </div>
             </div>
