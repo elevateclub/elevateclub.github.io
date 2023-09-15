@@ -3,8 +3,10 @@ var students = [];
 function addStudent(e) {
 	e.preventDefault();
 	
-	var el = $("#name").val();
-	console.log(el);
+	var el = $("#add-student-name-input").val();
+	students.push(el);
+
+	$("#students").append($(`<h1>${el}</h1>`));
 }
 
 $('document').ready(function(){
