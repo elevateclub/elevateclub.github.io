@@ -2,6 +2,23 @@ const width = 64, height = 64;
 let canvas, ctx;
 let rinput, ginput, binput;
 
+function getRandomByte() {
+	return Math.floor(Math.random() * 256);
+  }
+
+function randomButtonClicked(e) {
+	e.preventDefault();
+
+	rv = getRandomByte();
+	rinput.value = rv;
+	gv = getRandomByte();
+	ginput.value = gv;
+	bv = getRandomByte();
+	binput.value = bv;
+
+	updateColor();
+}
+
 function updateColor(e) {
 	var val = "#" + 
   	rinput.valueAsNumber.toString(16).padStart(2, "0") +
@@ -19,4 +36,6 @@ function updateColor(e) {
     ctx = canvas.getContext("2d");
     updateColor();
     [rinput, ginput, binput].forEach((v) => v.addEventListener("change", updateColor));
+
+    document.getElementById("random-button").addEventListener("click", randomButtonClicked);
 })();
