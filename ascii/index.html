@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ASCII</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <label for="input">Input: </label><br/>
+            <textarea id="input" cols="32" rows="8"></textarea>
+        </div>
+        <div>
+            <input type="radio" id="hex-radio" name="mode" value="hex" checked />
+            <label for="hex-radio">Hex</label>
+        </div>
+        <div>
+            <input type="radio" id="bin-radio" name="mode" value="bin"/>
+            <label for="bin-radio">Binary</label>
+        </div>
+        <div>
+            <label for="output-textarea">Output:</label><br/>
+            <textarea readonly id="output-textarea" cols="32" rows="8"></textarea>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
