@@ -1,0 +1,8 @@
+/* Style for the video container */
+#video-container {
+  max-width: 100%; /* Maximum width of the video container */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  display: block; /* Remove any default inline styles */
+  margin: 0 auto; /* Center the video horizontally within its container */
+}
+
