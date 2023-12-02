@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<body>
+		<h1>Hello Canvas</h1>
+		<canvas id="my-canvas" height="768" width="1024" style="border-style: double;">
+		<script>
+canvas = document.getElementById("my-canvas");
+ctx = canvas.getContext("2d");
+
+function drawWatermelon(x, y, r) {
+	ctx.beginPath();
+	ctx.arc(x, y, r, 0, Math.PI);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.arc(x, y, r*4/5, 0, Math.PI);
+	ctx.stroke();
+	ctx.moveTo(x-r, y);
+	ctx.lineTo(x+r, y);
+	ctx.stroke();
+}
+
+for(var i = 0; i < 5; i++) {
+	drawWatermelon(300, i*150, 100);
+}
+
+		</script>
+	</body>
+</html>
